@@ -20,3 +20,44 @@
 .reveal img, .reveal video, .reveal iframe {
 	max-width: 100%;
 }
+
+.ferramentas li:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,.3);
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.vraptor:after {
+	background: url("../img/vraptor-logo.png");
+	width: 245px;
+	height: 71px;
+	right: 5%;
+}
+
+.git:after {
+	background: url("../img/github-logo.png");
+	width: 99px;
+	height: 100px;
+	left: 9%;
+	top: 10%;
+}
+
+.amazon:after {
+	background: url("../img/amazon-logo.png");
+	width: 192px;
+	height: 75px;
+	right: -10%;
+	bottom: 9%;
+}
+
+.jenkins:after {
+	background: url("../img/jenkins-logo.png");
+	width: 99px;
+	height: 156px;
+	left: 0;
+}
