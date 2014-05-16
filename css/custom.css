@@ -21,7 +21,7 @@
 	max-width: 100%;
 }
 
-.ferramentas li:after {
+.ferramentas h2:after {
 	content: "";
 	display: inline-block;
 	position: absolute;
@@ -60,6 +60,7 @@
 	width: 99px;
 	height: 156px;
 	left: 0;
+	top: 50%;
 }
 
 .reveal .texto-imagem {
@@ -69,4 +70,18 @@
 
 .reveal .slide-background.present {
 	-webkit-filter: blur(2px);
+}
+
+.dicas:before {
+	content: "DICA";
+	background-color: #A00;
+	position: absolute;
+	top: 6%;
+	right: -5%;
+	color: #fff;
+	font-size: 2em;
+	padding: 0.2em 3em;
+	-webkit-transform: rotate(45deg);
+	text-shadow: 1px 1px 5px #000;
+	box-shadow: 1px 1px 5px #000;
 }
