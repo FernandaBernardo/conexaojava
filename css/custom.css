@@ -61,3 +61,12 @@
 	height: 156px;
 	left: 0;
 }
+
+.reveal .texto-imagem {
+	color:#222; 
+	text-shadow: 1px 1px 10px #555;
+}
+
+.reveal .slide-background.present {
+	-webkit-filter: blur(2px);
+}
