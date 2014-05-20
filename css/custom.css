@@ -1,3 +1,16 @@
+.intro {
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 10px;
+	display: inline-block;
+	height: 5em;
+}
+
+.intro img {
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0 .2em;
+}
+
 .abertura img{
 	width: 20%;
 	padding-left: 2em;
@@ -21,8 +34,7 @@
 	max-width: 100%;
 }
 
-.ferramentas h2:after {
-	content: "";
+.ferramentas h2 {
 	display: inline-block;
 	position: absolute;
 	background-size: contain;
@@ -32,43 +44,68 @@
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.vraptor:after {
+.vraptor {
 	background: url("../img/vraptor-logo.png");
 	width: 245px;
 	height: 71px;
-	right: 5%;
+	right: 4em;
+	top: -3em;
 }
 
-.nginx:after {
+.nginx {
 	background: url("../img/nginx.jpg");
 	width: 245px;
 	height: 53px;
-	right: 0;
-	top: 40%;
+	left: -1em;
+	top: 4em;
 }
 
-.git:after {
+.git {
 	background: url("../img/github-logo.png");
-	width: 99px;
+	width: 253px;
 	height: 100px;
-	left: 9%;
-	top: 10%;
+	right: -1em;
+	top: -2em;
 }
 
-.amazon:after {
+.maven {
+	background: url("../img/maven-logo.png");
+	width: 300px;
+	height: 70px;
+	left: 2em;
+	top: 1em;
+}
+
+.hibernate {
+	background: url("../img/hibernate-logo.jpg");
+	width: 251px;
+	height: 70px;
+	right: 2em;
+	top: 0;
+}
+
+.jetty {
+	background: url("../img/jetty.png");
+	width: 237px;
+	height: 70px;
+	left: -1em;
+	top: -1em;
+}
+
+.amazon {
 	background: url("../img/amazon-logo.png");
-	width: 192px;
-	height: 75px;
-	right: -10%;
-	bottom: 9%;
+	width: 225px;
+	height: 87px;
+	right: -1em;
+	top: 2em;
 }
 
-.jenkins:after {
+.jenkins {
 	background: url("../img/jenkins-logo.png");
-	width: 99px;
-	height: 156px;
-	left: 0;
-	top: 50%;
+	width: 299px;
+	height: 97px;
+	left: 5em;
+	top: 3em;
 }
 
 .reveal .texto-imagem {
