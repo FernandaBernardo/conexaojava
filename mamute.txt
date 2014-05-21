@@ -1,3 +1,29 @@
+Introdução: 
+mostrar lições que aprendemos com a experiência que tivemos com o Guj forum, depois a partir do guj velho chegar no novo guj e depois chegar no mamute. O processo de evoluir o guj ao novo formato demorou 6 meses. A partir do momento que decidimos extrair o mamute do guj, esse processo levou 2 meses.
+
+Guj Fórum:
+O Guj fórum tem mais de 13 anos. E nenhum sistema com essa idade é fácil de manter. Aĺém de que o formato de fórum já não é tão atual. Decidimos que não dava mais para evoluir o que tínhamos, que é uma decisão complicada, porque jogar fora é um trabalho de alguns anos.
+
+A partir do momento que decidimos jogar fora surge outra questão que é começar do zero ou adaptar uma solução open source. Existem várias soluções open source e tentamos usar uma solução, mas não conseguimos nos adaptar à ferramenta, porque não era tão fácil de customizar e a equipe não tinha tanto conhecimento da tecnologia, que era python. Decidimos então começar do zero.
+
+Então todo mundo se reuniu e se juntou para iniciar o novo projeto. E o interessante é que como o guj tem uma comunidade bem ativa, a equipe se motivou a fazer algo legal. 
+
+Como estávamos começando projeto novo tinhamos a possibilidade de escolher as ferramentas que queríamos
+
+Precisavamos de uma infra que mantivesse as duas aplicações em pé, totalmente diferentes. 
+
+Usamos o NGinx para fazer o proxy reverso. Isso significa que, quando o usuario acessar uma url do guj forum, ele acessa o jetty dele. E quando vai para o guj perguntas e respostas ele manda para o jetty do mesmo. 
+
+
+Queríamos poder desenvolver as coisas e lançar as features o mais rápido possível para saber se estavamos no caminho certo. Então precisamos deployar de uma forma fácil e automatizada e também não queríamos que o sistema ficasse fora do ar para não deixar em média 60 pessoas tristes. 
+
+Com isso conseguíamos fazer deploys muito rápidos e com isso as vezes faziamos deploys quebrados e víamos o problema rápido. Um desses problemas foi de segurança e vários deploys foram feitos com esse problema.
+
+um problema clássico em sistemas que tem formulários é o usuário. Em um formulário o usuário pode escrever apenas o que foi pedido a ele. Mas nunca devemos confiar no usuário. Ele pode escrever coisas que danifiquem o nosso sistema. isso é bem conhecido como html injection. a forma que resolvemos isso foi utilizando uma biblioteca chamada OwaspJava, que te permite configurar quais tags você quer permitir
+
+
+
+
 Com o sucesso na comunidade do GUJ, percebemos que tínhamos uma ferramenta interessante na mão e sabíamos que esse tipo de sistema de perguntas e respostas estava fazendo sucesso e ao mesmo tempo sabíamos que não tinha nenhuma boa alternativa open source, até porque antes de fazermos o nosso próprio testamos uma e não conhecíamos nenhuma desenvolvida em java. Então vimos que podíamos dominar o mundo!
 
 
