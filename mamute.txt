@@ -1,0 +1,24 @@
+Com o sucesso na comunidade do GUJ, percebemos que tínhamos uma ferramenta interessante na mão e sabíamos que esse tipo de sistema de perguntas e respostas estava fazendo sucesso e ao mesmo tempo sabíamos que não tinha nenhuma boa alternativa open source, até porque antes de fazermos o nosso próprio testamos uma e não conhecíamos nenhuma desenvolvida em java. Então vimos que podíamos dominar o mundo!
+
+
+Mamute
+Como saberíamos se o que estávamos fazendo seria aproveitado por alguém?
+Se só desenvolvêssemos não iríamos saber, então precisaríamos colocar em produção algo simples e o mais rápido possível.
+
+Por isso buscamos um cliente real antes mesmo de estar pronto ou lançarmos. 
+Mamãe Pergunta - tentou usar o sistema e encontramos alguns problemas. 
+
+O primeiro problema foi a parte de layout, que não era igual ao guj. O cliente queria uma customização diferenciada. Por isso tivemos que fazer o CSS customizável. 
+Não tem tanto problema com isso, pois a solução mais fácil para customizar um CSS é apenas um arquivo que sobreescreva as classes. Além disso, o usuário não poderia escrever no nosso próprio css, pela parte de atualização do arquivo. É uma solução fácil, mas como não pensamos nisso desde o início, o CSS não está na melhor estrutura para sobreescrever. Tem alguns problemas, como classes sem nomes que representem a funcionalidade, muitas classes para um mesmo elemento, entre outros.
+
+Outro problema encontrado foi a parte de propagandas, notícias e tags principais, que não foram utilizadas no mamae pergunta e não faziam sentido. Então, o html final deveria ser customizável de alguma forma pelo usuário. E da mesma forma do CSS, nnão teria como mexer no nosso código direito, por ficar difícil de manter. O que fizemos, foi definir os pontos que o usuário pudesse customizar. Para fazer isso nos pontos que queríamos que fosse customizável, incluimos um pedaço do código jsp, que já incluimos um default no nosso código e se o usuario quiser trocar é só acrescentar outro arquivo no diretório custom.
+
+Várias funcionalidades que fizemos pensando no guj não se aplicam a outros usuários. Muito código estava hardcoded. Como por exemplo, a criação das tags. Enquanto no GŨJ queríamos controlar a criação de tags e não deixar o usuário criá-las, no Mamãe Pergunta, sendo um sistema novo e sem tags, eles queriam deixar o usuário criar novas tags. Para conseguirmos fazer isso, tivemos que usar propriedades para customizar essa parte. Da mesmo forma que as JSPs tinham um default e a customização é feita por um novo arquivo, também temos um mamute.properties que tem as chaves com valores default e a customização é feita no environment.properties.
+
+Um problema que tivemos internamente, que nem teve a ver com clientes foi a parte de idiomas. O guj estava em português e o mamute, como seria uma ferramenta open source teria que ser em inglês. A parte de internacionalização é fácil, todo mundo sabe e se preocupa com isso! É só colocar as chaves no message.properties e na jsp colocar fmt:message. Mas tem uma parte bem mais complicada que não envolve as jsps, que é a parte do javascript e das rotas, coisas que não pensamos com frequência.
+A parte das rotas, como sempre colocamos direto a url no controller e não tinha uma forma de fazer isso, tivemos que mexer direto na parte interna do Vraptor. O legal é que pudemos contribuir direto para o Vraptor, criando um plugin para customizar as rotas, e acabou virando uma propriedade do sistema.
+Não é só no back-end que tem texto, o javascript também precisa ser internacionalizado. Todos se preocupa,m em colocar o fmt:message, mas não é possível colocar no javascript, porque o message.properties está no servidor e o js roda no lado do cliente. Então no javascript as mensagens devem estar carregadas no idioma certo, para isso fizemos na jsp um javascript onde criamos um array de mensagens global. Essa não é a melhor solução, foi a que encontramos no momento, já que tinhamos tempo reduzido.
+
+Por essa mesma falta de tempo, precisávamos entre as modificações que nosso cliente pedia, tinhamos que mandar de uma forma fácil tudo isso. E também com o uso do GUJ, queríamos manter uma forma fácil de fazer o deploy do mamute. Para isso, o build do nosso projeto deveria criar um war para o usuário apenas deszipar e conseguir usar. Então o build tem que rodar o maven para gerenciar as dependências e também ele roda um bash para minificar css e js e para gerar o script que o usuário irá usar para subir o sistema.
+
+O projeto tá pronto? Ainda não. Ainda tem duas coisas bem importantes no mundo open source: documentação e comunidade ativa. Para isso criamos o meta, um fórum para responder as próprias perguntas de como utilizar o mamute.
