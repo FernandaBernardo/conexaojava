@@ -115,7 +115,11 @@
 	-moz-filter: blur(2px);
 }
 
-.dicas:before {
+.dicas-white body {
+    background-color: #fff;
+}
+
+.dicas:before,.dicas-white:before {
 	content: "DICA";
 	background-color: #A00;
 	position: absolute;
