@@ -119,6 +119,10 @@
     background-color: #fff;
 }
 
+.dicas-white h2 {
+    color: #000;
+}
+
 .dicas:before,.dicas-white:before {
 	content: "DICA";
 	background-color: #A00;
@@ -223,4 +227,8 @@
 .reveal .front {
 	font-size: 1.5em;
 	font-family: 'Londrina Sketch', sans-serif;
+}
+
+.reveal pre code {
+    max-height: 100%
 }

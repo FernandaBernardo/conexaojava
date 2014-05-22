@@ -134,6 +134,32 @@
 						<img src="img/nginx-gujs4.svg" alt="">	
 					</section>
 
+                    <section>
+                        <pre><code class="no-highlight">
+upstream gujforum {
+        server 127.0.0.1:8080;
+}
+
+upstream gujperguntas {
+        server 127.0.0.1:9090;
+}
+
+server {
+    listen       80;
+    server_name  guj.com.br www.guj.com.br;
+
+    location ~ ^(/forums) {
+        proxy_pass  http://gujforum;
+    }
+
+    location / {
+        proxy_pass http://gujperguntas/;
+    }
+
+}
+                        </code></pre>
+                    </section>
+
 					<!-- Chico -->
 					<section data-state="dicas">
 						<h2>Deploy Fácil</h2>
@@ -150,9 +176,23 @@
 						<h3>Reversível</h3>
 						<img src="img/deploy-hash.png" alt="" width="1000px">
 					</section>
+
 					<section class="deploy">
 						<h2>Deploy Fácil</h2>
 						<h3>Zero Downtime</h3>
+					</section>
+
+					<section class="deploy" data-state="dicas-white">
+						<img src="img/deploy-guj1.svg" alt="">
+					</section>
+					<section class="deploy" data-state="dicas-white">
+						<img src="img/deploy-guj2.svg" alt="">
+					</section>
+					<section class="deploy" data-state="dicas-white">
+						<img src="img/deploy-guj3.svg" alt="">
+					</section>
+					<section class="deploy" data-state="dicas-white">
+						<img src="img/deploy-guj4.svg" alt="">
 					</section>
 
 					<!-- Fê -->

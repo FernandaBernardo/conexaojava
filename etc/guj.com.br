@@ -1,0 +1,21 @@
+upstream gujforum {
+	server 127.0.0.1:8080;
+}
+
+upstream gujperguntas {
+	server 127.0.0.1:9090;
+}
+
+server {
+    listen       80;
+    server_name  guj.com.br www.guj.com.br;
+
+    location ~ ^(/forums) {
+        proxy_pass  http://gujforum;
+    }
+
+    location / {
+        proxy_pass http://gujperguntas/;
+    }
+
+}
