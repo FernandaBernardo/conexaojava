@@ -184,15 +184,15 @@
                     <section data-state="dicas">
                         <pre><code class="no-highlight">
 upstream gujforum {
-        server 127.0.0.1:8080;
+    server 127.0.0.1:8080;
 }
 
 upstream gujperguntas {
-        server 127.0.0.1:9090;
+    server 127.0.0.1:9090;
 }
 
 server {
-    listen       80;
+    listen 80;
     server_name  guj.com.br www.guj.com.br;
 
     location ~ ^(/forums) {
@@ -200,7 +200,7 @@ server {
     }
 
     location / {
-        proxy_pass http://gujperguntas/;
+        proxy_pass http://gujperguntas;
     }
 
 }
