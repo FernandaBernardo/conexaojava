@@ -153,7 +153,7 @@
 	box-shadow: 1px 1px 5px #000;
 }
 
-.gambiarra img:last-child {
+.reveal .gambiarra {
 	position: absolute;
 	width: 1200px;
 	height: 800px;
