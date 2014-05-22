@@ -14,11 +14,11 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch|Dancing+Script' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reveal.min.css">
 	<link rel="stylesheet" href="css/theme/brutal.css" id="theme">
 
 	<!-- For syntax highlighting -->
-	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch|Dancing+Script' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 	<link rel="stylesheet" href="css/custom.css">
 
@@ -113,7 +113,7 @@
 
 					<section>
 						<h3>Migrar aos poucos</h3>
-						<img src="img/baby-steps.jpg" alt="" width="1000px">
+						<img src="img/baby-steps.jpg" alt="" width="900px">
 						
 					</section>
 
@@ -139,20 +139,20 @@
 						<h2>Deploy Fácil</h2>
 					</section>
 
-					<section>
+					<section class="deploy">
 						<h2>Deploy Fácil</h2>
 						<h3>Automatizado</h3>
 						<img src="img/deploy.png" alt="" width="1000px">
 					</section>
 
-					<section>
+					<section class="deploy">
 						<h2>Deploy Fácil</h2>
 						<h3>Reversível</h3>
 						<img src="img/deploy-hash.png" alt="" width="1000px">
 					</section>
-					<section>
+					<section class="deploy">
 						<h2>Deploy Fácil</h2>
-						<h2>Zero Downtime</h2>
+						<h3>Zero Downtime</h3>
 						IMAGEM jetty
 					</section>
 
@@ -238,31 +238,31 @@
 					</section>
 
 					<!-- Fê -->
-					<section data-state="experiencia">
+					<section class="front" data-state="experiencia">
 						<h2>CSS</h2>
 						<img src="img/guj-head.png">
 						<img src="img/mamute-head.png">
 					</section>
-					<section data-state="experiencia">
+					<section class="front" data-state="experiencia">
 						<h2>CSS</h2>
 						<img src="img/css-screenshot.png" alt="" width="900px">
 					</section>
 
 					<!-- Chico -->
-					<section>
+					<section class="front">
 						<h2>JSP</h2>
 						<img src="img/mamaepergunta.png" width="1000px">
 						<img src="img/guj-header.png" width="1000px">
 					</section>
-					<section data-state="experiencia">
+					<section class="front" data-state="experiencia">
 						<h2>JSP</h2>
 						<img src="img/brutal-include-pastas.png" width="450px;">
 					</section>
-					<section data-state="experiencia">
+					<section class="front" data-state="experiencia">
 						<h2>JSP</h2>
 						<img src="img/brutal-include-codigo.png" width="1000px">
 					</section>
-					<section data-state="experiencia">
+					<section class="front"data-state="experiencia">
 						<h2>JSP</h2>
 						<img src="img/brutal-include.png" alt="" width="1000px">
 					</section>
@@ -285,26 +285,36 @@
 						<h2>Internacionalização</h2>
 						<img src="img/i18n.png">
 					</section>
-					<section>
+					<section class="front">
 						<h1>JSTL</h1>
 						<h3>fmt:message</h3>
 					</section>
 
 					<!-- Fê -->
+					<section>
+						<h2>Rotas</h2>
+						<img src="img/controller.png" alt="" width="1000px">
+					</section>
+
 					<section data-state="experiencia">
 						<h2>Customização das Rotas</h2>
 						<img src="img/vraptor-routes.png" alt="">
-						<!-- arrumar -->
-						<p>SEO</p>
-						<p>Google</p>
+						<p class="fragment seo">SEO ++</p>
+						<p class="fragment google">Google ++</p>
+					</section>
+
+					<section>
+
+						<img src="img/routed.png" alt="" width="1000px">
+						<p>routes.pt-BR.properties</p>
+						<img src="img/rota.png" alt="" width="1000px">
 					</section>
 
 					<!-- Chico -->
 					<section data-state="experiencia" class="gambiarra">
 						<h2>Internacionalização de Javascript</h2>
-						<!-- arrumar -->
-						<img class="fragment" data-fragment-index="2" src="img/gambi-i18n-js.png" alt="" width="900px">
-						<img class="fragment" data-fragment-index="1" src="img/gambiarra.jpg" alt="">
+						<img class="fragment" data-fragment-index="2" src="img/gambi-i18n-js.png" alt="" width="1000px">
+						<img class="fragment current-visible" data-fragment-index="1" src="img/gambiarra.jpg" alt="">
 					</section>
 					<section data-state="experiencia">
 						<h2>Build</h2>
@@ -316,11 +326,13 @@
 					<!-- Fê -->
 					<section>
 						<h2>Update</h2>
+						<img src="img/update.png" alt="" width="1000px">
 					</section>
 
 					<!-- Chico -->
 					<section data-state="experiencia">
-						<h1>O projeto tá pronto?</h1>
+						<h1 class="fragment">O projeto tá pronto?</h1>
+						<h2 class="fragment" style="color: #f00; text-shadow: 1px 1px 5px #000">Não!</h2>
 					</section>
 					<section data-state="experiencia">
 						<h1>Mas é open source!</h1>
@@ -330,12 +342,12 @@
 					</section>
 					<section data-state="experiencia">
 						<h2>Documentação + Comunidade</h2>
-						imagem meta
-						<ul>
-							<li>Instalar</li>
-							<li>Usar</li>
-							<li>Customizar</li>
-						</ul>
+						<img src="img/promocao.jpg" alt="" width="1000px">
+					</section>
+					<section>
+						<h2>Documentação + Comunidade</h2>
+						<img src="img/mamute-screenshot.png" alt="" width="900px">
+						<a href="http://meta.mamute.org/">http://meta.mamute.org/</a>
 					</section>
 				</section>
 
@@ -348,7 +360,7 @@
 
 					<!-- Chico -->
 					<section>
-						<video width="1000px" height="600px" >
+						<video width="1000px" height="600px" controls>
 							<source src="video/mamute.ogg" type="video/ogg">
 						</video>
 					</section>

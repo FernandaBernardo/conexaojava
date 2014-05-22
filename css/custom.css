@@ -151,8 +151,8 @@
 
 .gambiarra img:last-child {
 	position: absolute;
-	width: 900px;
-	height: 506px;
+	width: 1200px;
+	height: 800px;
 	top: 0;
 	left: 3%;
 }
@@ -184,4 +184,43 @@
 	position: absolute;
 	top:40%;
 	left: -20%;
+}
+
+
+.reveal .seo {
+	color: #80f;
+	font-size: 3em;
+	font-family: 'Londrina Sketch', sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px #000;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.reveal .google {
+	color: #f60;
+	font-size: 3em;
+	font-family: 'Londrina Sketch', sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px #000;
+	position: absolute;
+	top: 400px;
+	left: 700px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.reveal .deploy h3{
+	font-family: 'Dancing Script', sans-serif;
+	color: #000;
+}
+
+.reveal .front {
+	font-size: 1.5em;
+	font-family: 'Londrina Sketch', sans-serif;
 }
