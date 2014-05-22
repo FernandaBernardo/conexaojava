@@ -21,9 +21,6 @@ Com isso conseguíamos fazer deploys muito rápidos e com isso as vezes faziamos
 
 um problema clássico em sistemas que tem formulários é o usuário. Em um formulário o usuário pode escrever apenas o que foi pedido a ele. Mas nunca devemos confiar no usuário. Ele pode escrever coisas que danifiquem o nosso sistema. isso é bem conhecido como html injection. a forma que resolvemos isso foi utilizando uma biblioteca chamada OwaspJava, que te permite configurar quais tags você quer permitir
 
-
-
-
 Com o sucesso na comunidade do GUJ, percebemos que tínhamos uma ferramenta interessante na mão e sabíamos que esse tipo de sistema de perguntas e respostas estava fazendo sucesso e ao mesmo tempo sabíamos que não tinha nenhuma boa alternativa open source, até porque antes de fazermos o nosso próprio testamos uma e não conhecíamos nenhuma desenvolvida em java. Então vimos que podíamos dominar o mundo!
 
 

@@ -20,8 +20,8 @@
 	width:36%
 }
 
-.sobre:first-child {
-	width: 50%;
+.sobre {
+	width: 49%;
 	float: left;
 }
 
@@ -153,8 +153,31 @@
 	left: 3%;
 }
 
-.fork {
+.reveal .fork {
 	background-color: #f00;
-	display: inline-block;
-	padding: .2em .5em !important;
+	position: absolute;
+	top: -75%;
+	right: -43%;
+	color: #fff;
+	font-size: 1em;
+	padding: 0.2em 3em;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	transform: rotate(40deg);
+	text-shadow: 1px 1px 5px #000;
+	box-shadow: 1px 1px 5px #000;
+}
+
+.reveal .fork a {
+	color: #fff;
+}
+
+.reveal .colab {
+	color:#000;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	transform: rotate(-90deg);
+	position: absolute;
+	top:40%;
+	left: -40%;
 }
