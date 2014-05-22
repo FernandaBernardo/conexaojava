@@ -232,3 +232,10 @@
 .reveal pre code {
     max-height: 100%
 }
+
+.reveal .warning {
+	font-family: 'Londrina Sketch', sans-serif; 
+	color:#f00; 
+	font-weight: bold;
+	font-size: 4em;
+}
