@@ -248,7 +248,7 @@
 
 .reveal pre code {
     max-height: 100%;
-    font-size: 1.4em;
+    font-size: 1.46em;
     line-height: 1.2em;
 }
 
@@ -257,4 +257,27 @@
 	color:#f00; 
 	font-weight: bold;
 	font-size: 4em;
+}
+
+.reveal .tag:after {
+	content: "oportunidade!";
+	background-color: #0f0;
+	border-radius: 5px;
+	margin: 0 .5em;
+	padding: .2em;
+	box-shadow: 1px 1px 4px #000;
+}
+
+.reveal .brutal {
+	position: absolute;
+	top: 200px;
+	left: 300px;
+	font-size: 6em;
+	font-family: 'Londrina Sketch', sans-serif; 
+	-webkit-transform: rotate(-45deg); 
+	color: #f00;
+	font-weight: bold;
+	background-color: rgba(255,255,255,.4);
+	border-radius: 20px;
+	padding: 0 .2em;
 }
