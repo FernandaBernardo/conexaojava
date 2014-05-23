@@ -249,6 +249,7 @@
 .reveal pre code {
     max-height: 100%;
     font-size: 1.4em;
+    line-height: 1.2em;
 }
 
 .reveal .warning {
