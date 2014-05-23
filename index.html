@@ -185,6 +185,7 @@
 					</section>
 
                     <section data-state="dicas">
+                    <div style="width:42%; display:inline-block; margin-right:-30px">
                         <pre><code class="no-highlight">
 upstream gujforum {
         server 127.0.0.1:8080;
@@ -193,7 +194,10 @@ upstream gujforum {
 upstream gujperguntas {
         server 127.0.0.1:9090;
 }
-
+                        </code></pre>
+                    </div>
+                    <div style="width:59%; display:inline-block">
+                        <pre><code class="no-highlight">
 server {
     listen       80;
     server_name  guj.com.br www.guj.com.br;
@@ -208,13 +212,14 @@ server {
 
 }
                         </code></pre>
+                        </div>
                         <aside class="notes">
                         	Chico -> Fe
                         </aside>
                     </section>
 
 					<section data-state="dicas">
-						<h2>Deploy Fácil</h2>
+						<h2 style="font-family: Londrina Sketch; font-size:4em;">Deploy Fácil</h2>
 						<aside class="notes">
 							Fe
 						</aside>
@@ -266,7 +271,7 @@ server {
 					</section>
 
 					<section>
-						<h2>Segurança</h2>
+						<h2 style="font-family: Londrina Sketch">Segurança</h2>
 						<img src="img/mib.jpg" alt="">
 						<aside class="notes">
 							Fe
@@ -288,7 +293,7 @@ server {
 					</section>
 
 					<section data-state="dicas">
-						<p>HTML Injection</p>
+						<p style="font-family: Londrina Sketch; font-size: 3em; color:#7bf; font-weight: bold">HTML Injection</p>
 					    <img src="img/html-injection.png">
 					    <aside class="notes">
 					    	Fee
@@ -305,14 +310,14 @@ server {
 					</section>
 
 					<section>
-						<h2>Lançamento</h2>
+						<h2 style="font-family: Londrina Sketch; font-size: 3em; color:#3A77A6; font-weight: bold">Lançamento</h2>
 						<img src="img/gujvelho.png">
 						<aside class="notes">
 							Chico
 						</aside>
 					</section>
 					<section>
-						<h2>Lançamento</h2>
+						<h2 style="font-family: Londrina Sketch; font-size: 3em; color:#F4F8F9; font-weight: bold">Lançamento</h2>
 						<img src="img/guj-screenshot.png">
 						<aside class="notes">
 							Chico
@@ -360,7 +365,7 @@ server {
 
 					<section data-state="experiencia">
 						<h2>Clientes Reais</h2>
-						<h3>Cobrança para partes customizáveis</h3>
+						<h3 style="font-family: Dancing Script;">Cobrança para partes customizáveis</h3>
 						<aside class="notes">
 							Fe
 						</aside>
@@ -493,7 +498,7 @@ server {
 					</section>
 
 					<section data-state="experiencia">
-						<h2>Update</h2>
+						<h2 style="font-family: Londrina Sketch; font-size: 3em; color:#F4F8F9;">Update</h2>
 						<img src="img/update.png" width="1000px">
 						<aside class="notes">
 							Fe -> chico
@@ -558,7 +563,6 @@ server {
 						</aside>
 					</section>
 
-						<!-- Oportunidades -->
 					<section data-background="#fff">
 						<img src="img/colaboradores.jpg" width="">
 						<h1 class="colab">Colaboradores</h1>
@@ -584,7 +588,10 @@ server {
 					</div>
 				</section>
 
-				<!-- link para gh-pages -->
+				<section>
+					<h1 style="font-family: Dancing Script;">Slides</h1>
+					<a href="http://fernandabernardo.github.io/conexaojava/#/">http://fernandabernardo.github.io/conexaojava</a>
+				</section>
 
 				<script src="lib/js/head.min.js"></script>
 				<script src="js/reveal.min.js"></script>
