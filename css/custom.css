@@ -127,11 +127,11 @@
 	content: "DICA";
 	background-color: #f90;
 	position: absolute;
-	top: 30px;
-	right: -70px;
+	top: 70px;
+	right: -300px;
 	color: #fff;
-	font-size: 2em;
-	padding: 0.2em 3em;
+	font-size: 2.2em;
+	padding: 0.2em 10em;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	text-shadow: 1px 1px 5px #000;
@@ -143,10 +143,10 @@
 	background-color: #0f0;
 	position: absolute;
 	top: 80px;
-	right: -110px;
+	right: -340px;
 	color: #fff;
 	font-size: 2em;
-	padding: 0.2em 3em;
+	padding: 0.2em 10em;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	text-shadow: 1px 1px 5px #000;
@@ -158,10 +158,10 @@
 	background-color: #007bff;
 	position: absolute;
 	top: 80px;
-	right: -100px;
+	right: -330px;
 	color: #fff;
 	font-size: 2em;
-	padding: 0.2em 3em;
+	padding: 0.2em 10em;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	text-shadow: 1px 1px 5px #000;
@@ -173,7 +173,7 @@
 	width: 1200px;
 	height: 800px;
 	top: 0;
-	left: 3%;
+	left: 10px;
 }
 
 .reveal .fork {
@@ -201,8 +201,8 @@
 	-moz-transform:rotate(-90deg);
 	transform: rotate(-90deg);
 	position: absolute;
-	top:40%;
-	left: -20%;
+	top:300px;
+	left: -250px;
 }
 
 
@@ -236,7 +236,9 @@
 
 .reveal .deploy h3{
 	font-family: 'Dancing Script', sans-serif;
-	color: #000;
+	color: #f90;
+	font-weight: bold;
+	font-size: 2em;
 }
 
 .reveal .front {
@@ -245,7 +247,8 @@
 }
 
 .reveal pre code {
-    max-height: 100%
+    max-height: 100%;
+    font-size: 1.4em;
 }
 
 .reveal .warning {

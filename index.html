@@ -45,7 +45,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Estudo de Caso: GUJ e Mamute</h1>
+					<h1>Estudo de Caso:</h1>
+					<h1>GUJ e Mamute</h1>
 					<p>Fernanda Bernardo e Chico Sokol</p>
 					<div class="abertura">
 						<img src="img/guj-logo.png">
@@ -59,11 +60,13 @@
 						<img src="img/fernanda.png">
 						<p>Fernanda Bernardo</p>
 						<p><a href="https://github.com/FernandaBernardo">github.com/FernandaBernardo</a></p>
+						<p>fernanda.bernardo@caelum.com.br</p>
 					</div>
 					<div class="sobre">
 						<img src="img/chico.jpg">
 						<p>Chico Sokol</p>
 						<p><a href="https://github.com/csokol/">github.com/csokol/</a></p>
+						<p>francisco.sokol@caelum.com.br</p>
 					</div>
 				</section>
 				<section>
@@ -182,6 +185,7 @@
 					</section>
 
                     <section data-state="dicas">
+                    <div style="width:42%; display:inline-block; margin-right:-30px">
                         <pre><code class="no-highlight">
 upstream gujforum {
     server 127.0.0.1:8080;
@@ -190,7 +194,10 @@ upstream gujforum {
 upstream gujperguntas {
     server 127.0.0.1:9090;
 }
-
+                        </code></pre>
+                    </div>
+                    <div style="width:59%; display:inline-block">
+                        <pre><code class="no-highlight">
 server {
     listen 80;
     server_name  guj.com.br www.guj.com.br;
@@ -205,13 +212,14 @@ server {
 
 }
                         </code></pre>
+                        </div>
                         <aside class="notes">
                         	Chico -> Fe
                         </aside>
                     </section>
 
 					<section data-state="dicas">
-						<h2>Deploy Fácil</h2>
+						<h2 style="font-family: Londrina Sketch; font-size:4em;">Deploy Fácil</h2>
 						<aside class="notes">
 							Fe
 						</aside>
@@ -263,30 +271,29 @@ server {
 					</section>
 
 					<section>
-						<h2>Segurança</h2>
-						<!-- imagem -->
+						<h2 style="font-family: Londrina Sketch">Segurança</h2>
+						<img src="img/mib.jpg" alt="">
 						<aside class="notes">
 							Fe
 						</aside>
 					</section>
 
 					<section>
-						<img src="img/formulario.png" width="1000px">
-						<!-- preencher formulario -->
+						<img src="img/formulario.png" width="1200px">
 						<aside class="notes">
 							Fe
 						</aside>
 					</section>
 
 					<section>
-						<img src="img/formulario-script.png" width="1000px">
+						<img src="img/formulario-script.png" width="1200px">
 						<aside class="notes">
 							Fe
 						</aside>
 					</section>
 
 					<section data-state="dicas">
-						<p>HTML Injection</p>
+						<p style="font-family: Londrina Sketch; font-size: 3em; color:#7bf; font-weight: bold">HTML Injection</p>
 					    <img src="img/html-injection.png">
 					    <aside class="notes">
 					    	Fee
@@ -303,14 +310,14 @@ server {
 					</section>
 
 					<section>
-						<h2>Lançamento</h2>
+						<h2 style="font-family: Londrina Sketch; font-size: 3em; color:#3A77A6; font-weight: bold">Lançamento</h2>
 						<img src="img/gujvelho.png">
 						<aside class="notes">
 							Chico
 						</aside>
 					</section>
 					<section>
-						<h2>Lançamento</h2>
+						<h2 style="font-family: Londrina Sketch; font-size: 3em; color:#F4F8F9; font-weight: bold">Lançamento</h2>
 						<img src="img/guj-screenshot.png">
 						<aside class="notes">
 							Chico
@@ -358,7 +365,7 @@ server {
 
 					<section data-state="experiencia">
 						<h2>Clientes Reais</h2>
-						<h3>Cobrança para partes customizáveis</h3>
+						<h3 style="font-family: Dancing Script;">Cobrança para partes customizáveis</h3>
 						<aside class="notes">
 							Fe
 						</aside>
@@ -374,7 +381,7 @@ server {
 					</section>
 					<section class="front" data-state="oportunidade">
 						<h2>CSS</h2>
-						<img src="img/css-screenshot.png" width="900px">
+						<img src="img/css-screenshot.png" width="1000px">
 						<aside class="notes">
 							Fe -> Chico
 						</aside>
@@ -433,7 +440,7 @@ server {
 
 					<section data-state="experiencia">
 						<h2>Internacionalização</h2>
-						<img src="img/i18n.png">
+						<img src="img/i18n.png" width="1000px">
 						<aside class="notes">
 							Chico
 						</aside>
@@ -456,7 +463,7 @@ server {
 					</section>
 					<section data-state="experiencia">
 						<h2>Rotas</h2>
-						<img src="img/controller.png" width="1000px"> <!-- SEO-- e GOogle-- -->
+						<img src="img/controller.png" width="800px"> <!-- SEO-- e GOogle-- -->
 						<!-- <p class="fragment seo">SEO ++</p>
 						<p class="fragment google">Google ++</p> -->
 						<aside class="notes">
@@ -473,7 +480,7 @@ server {
 						</aside>
 					</section>
 					<section data-state="experiencia">
-						<img src="img/routed.png" width="1000px">
+						<img src="img/routed.png" width="800px">
 						<p>routes.pt-BR.properties</p> <!-- SEO++ GOOGLE++ -->
 						<img src="img/rota.png" width="1000px">
 						<aside class="notes">
@@ -491,7 +498,7 @@ server {
 					</section>
 
 					<section data-state="experiencia">
-						<h2>Update</h2>
+						<h2 style="font-family: Londrina Sketch; font-size: 3em; color:#F4F8F9;">Update</h2>
 						<img src="img/update.png" width="1000px">
 						<aside class="notes">
 							Fe -> chico
@@ -500,16 +507,13 @@ server {
 
 					<section>
 						<h1>O projeto tá pronto?</h1>
-						<h2 class="fragment" style="color: #f00; text-shadow: 1px 1px 5px #000">Não!</h2>
+						<h2 class="fragment" style="color: #ff0; text-shadow: 1px 1px 5px #000">Não!</h2>
 						<aside class="notes">
 							Chico
 						</aside>
 					</section>
 					<section data-state="experiencia">
-						<h1>Mas é open source!</h1>
-						<h2>Documentação</h2>
-						<h2>+</h2>
-						<h2>Comunidade</h2>
+						<img src="img/open-source.jpg" alt="" width="1000px">
 						<aside class="notes">
 							Chico
 						</aside>
@@ -541,7 +545,7 @@ server {
 					</section>
 
 					<section>
-						<video width="1000px" height="600px" controls>
+						<video width="1000px" height="600px" controls class="stretch">
 							<source src="video/mamute.ogg" type="video/ogg">
 						</video>
 						<aside class="notes">
@@ -559,7 +563,6 @@ server {
 						</aside>
 					</section>
 
-						<!-- Oportunidades -->
 					<section data-background="#fff">
 						<img src="img/colaboradores.jpg" width="">
 						<h1 class="colab">Colaboradores</h1>
@@ -575,15 +578,20 @@ server {
 						<img src="img/fernanda.png">
 						<p>Fernanda Bernardo</p>
 						<p><a href="https://github.com/FernandaBernardo">github.com/FernandaBernardo</a></p>
+						<p>fernanda.bernardo@caelum.com.br</p>
 					</div>
 					<div class="sobre">
 						<img src="img/chico.jpg">
 						<p>Chico Sokol</p>
 						<p><a href="https://github.com/csokol/">github.com/csokol/</a></p>
+						<p>francisco.sokol@caelum.com.br</p>
 					</div>
 				</section>
 
-				<!-- link para gh-pages -->
+				<section>
+					<h1 style="font-family: Dancing Script;">Slides</h1>
+					<a href="http://fernandabernardo.github.io/conexaojava/#/">http://fernandabernardo.github.io/conexaojava</a>
+				</section>
 
 				<script src="lib/js/head.min.js"></script>
 				<script src="js/reveal.min.js"></script>
